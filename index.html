@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora imc</title>
+</head>
+<body>
+    <h1>Calculadora imc</h1>
+    <div>
+        <form action="">
+            <input type="text" name="Nome" id="nome" placeholder="Nome"> <br>
+            <input type="number" name="Peso" id="peso" placeholder="Peso"> <br>
+            <input type="number" name="Altura" id="altura" placeholder="Altura em CM"> <br>
+            <h3 id="resultado"></h3>
+        </form>
+    </div>
+</body>
+</html>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: dodgerblue;
+}
+form{
+    border-radius: 40px;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+}
+::placeholder{
+    color: dodgerblue;
+    height: 25px;
+    width: 25px;
+}
+</style>
+<script>
+   let nome = document.getElementById('nome').value
+ let peso =  document.getElementById('peso').value
+  let altura =   document.getElementById('altura').value
+  let resul = document.getElementById('resultado')
+function calculo(){
+if(nome == '' && peso == '' && altura == ''){
+    alert('espaço vazio')
+}
+}
+</script>
